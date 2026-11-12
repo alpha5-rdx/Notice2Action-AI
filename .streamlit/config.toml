@@ -1,0 +1,19 @@
+[theme]
+base = "light"
+primaryColor = "#0072B2"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f4f8fc"
+textColor = "#0f1f33"
+
+[client]
+toolbarMode = "minimal"
+# Visitors see only the exception type, never stack traces or internals. Full traces stay in the server log.
+showErrorDetails = "type"
+
+[server]
+maxUploadSize = 15
+enableXsrfProtection = true
+enableCORS = true
+
+[browser]
+gatherUsageStats = false

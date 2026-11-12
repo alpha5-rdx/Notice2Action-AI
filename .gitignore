@@ -1,0 +1,51 @@
+# --- Secrets & credentials (never commit) ---
+# Everything in .streamlit/ is ignored EXCEPT the two files that are safe and meant to be shared.
+.streamlit/*
+!.streamlit/config.toml
+!.streamlit/secrets.toml.example
+.streamlit/secrets.toml
+*key*.txt
+*secret*.txt
+*token*.txt
+*password*.txt
+*credential*
+.env
+.env.*
+*.env
+*.pem
+*.key
+supabase/.env
+supabase/.temp/
+supabase/.branches/
+
+# --- Local databases & user data ---
+data/*
+!data/.gitkeep
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# --- Uploads, temporary and generated files ---
+uploads/
+tmp/
+temp/
+*.tmp
+*.log
+
+# --- Python / tooling ---
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Editors / assistants ---
+.kiro/
+.vscode/
+.idea/
